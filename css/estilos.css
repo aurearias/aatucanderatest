@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+body{
+	font-size:16px;
+	font-family: "Open Sans", Arial ,Sans-serif;
+	background: white;
+	color:#789600;	 
+}
+
+h1{
+	font-weight: 300;
+}
+/*-------------------------Info------------------------------*/
+
+header{
+	margin-top: 20px 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#hola{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+#hola h4{
+    margin-bottom: 0px;
+    padding: 0px;
+    
+}
+#hola p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/*--------------------------Galerias------------------------*/
+
+.galeria{
+    
+    background: rgba(80,100,0,.1); 
+    color: #789600;
+    margin: 0px;
+    padding: 0;
+}
+.galeria header{
+    padding-top:40px;
+    margin: 0;
+}
+
+.contenedor{
+	max-width: 1350px;
+	width: 100%;
+	margin:0px;    
+    padding: 3%;
+    padding-top: 10px;
+}
+.galeria .contenedor{
+	display: flex;
+	flex-direction: wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.foto{
+	width: 32.91%;
+	margin-bottom: 10px;
+	outline: 5px solid rgba(0,0,0,0)
+	-webkit-box-shadow: 4px 4px 6px rgba(0,0,0,.7);
+	-moz-box-shadow: 4px 4px 6px rgba(0,0,0,.7);
+	-ms-box-shadow: 4px 4px 6px rgba(0,0,0,.7);
+	-o-box-shadow: 4px 4px 6px rgba(0,0,0,.7);
+	box-shadow: 4px 4px 6px rgba(0,0,0,.7);
+	-webkit-transition:.4s;
+	-o-transition:.4s;
+	transition: .4s;
+}
+
+.foto img{
+	width: 100%;
+	vertical-align: top;
+	
+}
+/*
+--------------------------Cuando el Raton pasa por Encima----------------------------
+*/
+.foto:hover{	
+	transition: all 1.4s ;
+	filter:blur(2px);
+	filter: brightness(0.6);
+    -webkit-transform:scale(1.02) ;
+    -moz-transform:scale(1.02) ;
+    -ms-transform:scale(1.02) ;
+    -o-transform:scale(1.02) ;
+    transform:scale(1.02) ;
+}
+
+
+
+
+/*
+------------------------------Responsive---------------------------
+*/
+
+@media screen and (max-width:780px) {
+	.galeria .contenedor{
+		
+	}
+
+	.foto {
+		width: 49%;
+		
+	}
+}
+
+@media screen and (max-width:500px) {
+	.galeria .contenedor{
+		flex-direction: column;
+	}
+
+	.foto {
+		width: 90%;
+		margin:auto;
+		margin-bottom: 30px;
+	}
+}
+
+/*
+----------------------------------End of Responsive-----------------------------------
+*/
